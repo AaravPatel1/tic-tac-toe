@@ -1,0 +1,57 @@
+body {
+    font-family: 'Creepster', cursive; /* Add a spooky font */
+    background-color: #000;
+    color: #f5f5f5;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff7518; /* Halloween orange */
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* Change to 4x4 grid */
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    border: 2px solid #ff7518;
+    color: #ff7518;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #333;
+}
+
+.cell.taken {
+    pointer-events: none;
+    color: #b22222; /* Red for taken cells */
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #ff7518;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #b22222;
+}
